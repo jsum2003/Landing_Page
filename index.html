@@ -4,55 +4,127 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-    <title>Photo Tool</title>
+    <link rel="shortcut icon"
+        href="./assets/img/polera-cannabica-gato-con-cogollo-cami-del-toro-diseno-removebg-preview.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>El gato volador</title>
 </head>
 
 <body>
-    <nav class="navar">
-        <h1>photo Tool</h1>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Informacion</a></li>
-            <li><a href="#">acerca de</a></li>
-            <li><a href="#">Contactos</a></li>
+    <nav class="barra" id="barra">
+        <div class="contenedor">
+            <a href="">
+                <img src="./assets/img/polera-cannabica-gato-con-cogollo-cami-del-toro-diseno-removebg-preview.png"
+                    alt="">
+                El gato volador</a>
+        </div>
+        <button class="menu-des" id="menu-des">&#9776;</button>
+        <ul class="lista" id="lista">
+            <li><a href="#product">Productos</a></li>
+            <li><a href="#form">inscripción</a></li>
+            <li><a href="#footer">Contacto</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="item1">
-            <div class="card">
-                <h3>¿Quienes somos?</h3>
-                <p>👾Somos una empresa dedicada a tomar fotos a tu herramienta mas preciada, demosdo que nso
-                    encargamos de traerla cuidarla entregarla de nuevo cuando termine el proceso.👍🏽</p>
-                <p><strong>&middot;Somos confiables</strong></p>
-                <p><strong>&middot;Somos cumplidos</strong></p>
-                <p><strong>&middot;comprometidos con nuestro grabajo</strong></p>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./assets/img/polera-cannabica-gato-con-cogollo-cami-del-toro-diseno-removebg-preview.png"
+                alt="Logo del gato volador" class="hero-img">
+            <h1>¡Bienvenido a El Gato Volador!</h1>
+            <p>Tu tienda que vende felicidad para tu gato, para que se ponga bien volador.</p>
+            <a href="#product" class="btn-hero">Ver productos</a>
+        </div>
+    </section>
+
+    <div class="card2 ">
+        <div class="card-title" id="product">
+            <h1>Productos</h1>
+        </div>
+    </div>
+
+    <div class="contenedor-grid">
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/img/D_NQ_NP_933282-MLU74488145618_022024-O.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Crab Cat Catnip Bola Giratoria Hierba Gatera</h5>
+                <p class="card-text">Juguete encantador para tu gato con la hierba gatera mas refinada para que tu gato vuele de la alegria.</p>
+                <a href="#" class="btn ">Agregar</a>
             </div>
         </div>
-        <div class="carrusel">
-            <div class="line-carrusel">
-                <div class="imagen-movil"><img class="img1"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-_0gY4dwaiVcW4Ado-OoHQstLc1ps-rFEg&s"
-                        alt=""></div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/img/descarga.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Catnip</h5>
+                <p class="card-text">Cuando el comportamiento de los 🐱 se hace difícil de soportar, o cuando estas mascotas están pasando por un periodo de estrés ,
+                    una buena alternativa es utilizar catnip, una hierba que puede ayudar a relajar al felino y hacerlo más dócil.</p>
+                <a href="#" class="btn ">Agregar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./assets/img/images.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Hipna gatera orgánica corte fino</h5>
+                <p class="card-text">La mejor hierba gatera corte fino para que tu gato se poga happy.</p>
+                <a href="#" class="btn ">Agregar</a>
             </div>
         </div>
     </div>
-    <div class="item3">
-        <div class="card2">
-            <p><strong>Informacion del creador</strong></p>
-            <p><strong>Nombre:</strong> [Johan Uñate]</p>
-            <p><strong>Profesión:</strong> Desarrollador Web</p>
-            <p><strong>Correo electrónico:</strong> [unatemolij26@gmail.com]</p>
-            <p><strong>Redes Sociales:</strong>
-                <a href="[Enlace a tu perfil de LinkedIn]" target="_blank">LinkedIn</a> |
-                <a href="[Enlace a tu perfil de GitHub]" target="_blank">GitHub</a>
-            </p>
+    <div class="card2 ">
+        <div class="card-title" id="form">
+            <h1>Formulario inscripción</h1>
         </div>
     </div>
-    <footer class="site-footer">
-        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="container3">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class=" cajon form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="cajon form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="cajon form-control" id="inputAddress">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="cajon form-control" id="inputCity">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Incribir</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>📍 Dirección: Calle Ficticia 123, Ciudad</p>
+                <p>📞 Teléfono: (123) 456-7890</p>
+                <p>✉️ Email: contacto@gatovolador.com</p>
+            </div>
+
+            <div class="enlaces">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#product">Productos</a></li>
+                    <li><a href="#barra">Nosotros</a></li>
+                    <li><a href="#footer">inscripción</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-boton">
+            <p>&copy; 2025 El Gato Volador. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

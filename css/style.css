@@ -1,105 +1,266 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif
 }
 
-.page-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/*Menu de navegacion*/
-.navar{
-    background-color: darkcyan;
-    color: white;
-    align-items: center;
+.barra {
+    background-color: #1dbf9a;
+    margin: 15px;
+    border-radius: 3px;
+    padding: 4px 30px;
     justify-content: space-between;
     display: flex;
-    padding: 3px 20px;
-    border-radius: 3px;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.navar > ul {
+
+.contenedor>a>img {
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor>a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
 }
 
-.navar > ul > li > a {
+.lista>li>a {
     text-decoration: none;
     color: white;
-
 }
 
-.navar ul li a:hover {
-    color: #1abc9c;
+.lista>li>a:hover {
+    color: #1DBF9A;
 }
 
-/*contenedor de grid*/
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px;
-    gap: 20px;
-}
-
-/*item texto*/
-.item1 {
-    grid-column: 1 / 3;
-    background-color: aquamarine;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.item1 > .card {
-    height: 97%;
-    background-color: white;
-    padding: 3px;
-    border-radius: 10px;
-}
-
-/*item carrusel*/
-.carrusel {
-    background-color: aquamarine;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.imagen-movil {
-    padding: auto;
-}
-.img1 {
-    width: 100%;
-    height: 110%;
-    border-radius: 10px;
-}
-
-.line-carrusel {
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.item3 {
-    grid-column: 1 / 3;
-    background-color: aquamarine;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 20px 20px;
-
-}
-
-.item3 > .card2 {
-    height: 97%;
-    background-color: white;
-    padding: 3px;
-    border-radius: 10px;
-}
-
-.site-footer {
-    border-radius: 3px;
-    text-align: center;
-    background-color: darkcyan;
-    padding: 20px;
+.menu-des {
+    display: none;
+    font-size: 28px;
+    background: none;
     color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .lista {
+        border-radius: 3px;
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 90px;
+        right: 60px;
+        width: 200px;
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    .lista.show {
+        display: flex;
+    }
+
+    .menu-des {
+        display: block;
+    }
+}
+
+.hero {
+    background-color: #f2c783;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    margin: 32px 50px 50px 50px;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color:  white;
+}
+
+.btn-hero {
+    background-color: #1dbf9a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.btn-hero:hover {
+    background-color: #148c89;
+}
+
+.contenedor-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px;
+    padding-left: 135px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: #1dbf9a;
+    border: 1px solid black;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card > img {
+    margin: 6px;
+    width: 96%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.card-body > .btn {
+    margin-top: auto;
+    background-color: #ffffff;
+    color: #1dbf9a;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.card-body > .btn:hover {
+    color: white;
+}
+
+.card2 {
+    background-color: #1dbf9a;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white; 
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.btn {
+    text-shadow: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    background-color: #148c89;
+    border: 1px solid black;
+}
+
+.container3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #f2c783;
+}
+
+.cajon {
+    border: 1px solid black;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #145c87;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: 'Inter', sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    color: white
+}
+
+.footer p,
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer a:hover {
+    color: #1dbf9a;
+    /* Verde agua */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #f6b19e;
+    /* ← Aquí se crea la línea */
+    padding-top: 15px;
+    font-size: 14px;
 }
